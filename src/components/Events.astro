@@ -1,0 +1,38 @@
+---
+import Event from "./Event.astro";
+
+const events = [
+  {
+    title: "Evento 1",
+    description: "Descripcion del evento 1",
+    place: "Lugar del evento 1",
+    date: "2022-01-01",
+    image: "https://placehold.co/600x400",
+  },
+  {
+    title: "Evento 2",
+    description: "Descripcion del evento 2",
+    place: "Lugar del evento 2",
+    date: "2023-01-01",
+    image: "https://placehold.co/700x500",
+  },
+  {
+    title: "Evento 3",
+    description: "Descripcion del evento 3",
+    place: "Lugar del evento 3",
+    date: "2024-01-0",
+    image: "https://placehold.co/1000x800",
+  },
+];
+---
+
+<section id="events" class="p-5 min-h-[86vh] lg:mx-20">
+  <h2
+    class="text-3xl font-bold my-10 bg-gradient-to-t from-primary to-secondary bg-clip-text">
+    Eventos
+  </h2>
+  <div
+    class="flex flex-col lg:flex-row items-center justify-between flex-wrap gap-5 lg:gap-0">
+    {events.map((event) => <Event {...event} />)}
+  </div>
+</section>
