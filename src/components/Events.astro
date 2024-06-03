@@ -26,13 +26,12 @@ const events = [
 ];
 ---
 
-<section id="events" class="p-5 min-h-[86vh] lg:mx-20">
+<section id="events" class="p-5 min-h-[86vh] lg:max-w-[1200px]">
   <h2
     class="text-3xl font-bold my-10 bg-gradient-to-t from-primary to-secondary bg-clip-text">
     Eventos
   </h2>
-  <div
-    class="flex flex-col lg:flex-row items-center justify-between flex-wrap gap-5 lg:gap-0">
+  <div class="grid lg:grid-cols-3 gap-5">
     {events.map((event) => <Event {...event} />)}
   </div>
 </section>

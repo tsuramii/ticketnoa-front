@@ -3,7 +3,7 @@ const { title, description, place, date, image } = Astro.props;
 ---
 
 <article
-  class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full lg:max-w-[330px]">
+  class="bg-background shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 w-full ]">
   <div class="relative">
     <img class="w-full h-64 object-cover" src={image} alt="Imagen del evento" />
     <div
@@ -37,7 +37,7 @@ const { title, description, place, date, image } = Astro.props;
     </div>
     <a
       href={title}
-      class="text-primary rounded-lg border-primary border px-4 py-2 tracking-widest w-full block text-center">
+      class="text-primary rounded-lg hover:bg-primary hover:text-background transition-colors border-primary border px-4 py-2 tracking-widest w-full block text-center">
       COMPRAR
     </a>
   </div>
